@@ -1,0 +1,58 @@
+ <footer class="bg-gray padtop_padbot" data-ng-show="!userDetails.user_id">
+    <div class="container">
+          <div class="row clearfix">
+            <div class="col-md-12 col-sm-12">
+              <div class="col-md-3 col-sm-3">
+                  <ul>
+                    <li> <a ui-sref="about" target="_blank" >About Us</a> </li>
+                    <li> <a ui-sref="careers" target="_blank">Careers</a> </li>
+                    <li> <a ui-sref="contactus" target="_blank">Contact Us</a> </li>
+                    <li> <a ui-sref="serviceproviderzone" target="_blank">Service Providers</a> </li>
+                  </ul>
+              </div>
+              <div class="col-md-3 col-sm-3">
+                  <ul>
+                    <!-- <li data-ng-show="!userDetails.user_id"><a ui-sref="whyboostmychild">Why boostmychild?</a></li> -->
+                    <li> <a ui-sref="home" data-ng-show="!userDetails.user_id" ng-click="opensignupModal('consumer', 1, true)">Create an account</a> </li>
+                    <!-- <li> <a ui-sref="consumer_faq" >FAQ</a> </li> -->
+                    <li> Download App </li>
+                    <li> <a  target="_blank" href="https://play.google.com/store/apps/details?id=com.boostmychild.consumer"> <img src="./../../assets/images/gplay.png"> </a> </li>
+                  </ul>
+              </div>
+              <div class="col-md-3 col-sm-3">
+                  <ul>
+                    <li> <a ui-sref="terms" target="_blank" >Terms and Conditions</a> </li>
+                    <li> <a ui-sref="privacy" target="_blank">Privacy Policy</a> </li>
+                  </ul>
+              </div>
+              <div class="col-md-3 col-sm-3">
+                  <ul class="margbot0">
+                    <li> Email us: <a ui-sref="contactus">info@boostmychild.com</a> </li>
+                    <li> Call us: <a ui-sref="contactus">+91 7888100034/ 35/ 36</a> </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="copyright top-border bg-gray padtop_padbot" data-ng-show="!userDetails.user_id">
+        <div class="container">
+          <div class="row clearfix">
+            <div class="col-md-12 col-xs-12 col-sm-12">
+              <div class="col-md-6 col-xs-12 col-sm-6 social">
+                  <a  target="_blank" href="https://www.facebook.com/boostmychild"><img src="./../../assets/images/facebook.png"></a>
+                  <a  target="_blank" href="https://www.linkedin.com/company/boostmychild"><img src="./../../assets/images/linkedin.png"></a>
+                  <a  target="_blank" href="https://plus.google.com/u/0/115083542574354826059"><img src="./../../assets/images/gplus.png"></a>
+                  <a  target="_blank" href="https://twitter.com/boostmychild"><img src="./../../assets/images/twitter.png"></a>
+              </div>
+              <div class="col-md-6"></div>
+
+              <div class="col-md-6 col-xs-12 col-sm-6 text-right footer_logo">
+                <img src="./../../assets/images/newlogo1.png" class="logo"/>
+                  <br>Copyright © <a href="index.html">BluePlanet Corporation</a> 2016
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

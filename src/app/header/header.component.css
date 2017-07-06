@@ -1,1 +1,3 @@
-.logo{ width: 170px;margin: 15px;}
+.blue_button{background: #3369e8;}
+.blue_button:hover{background-color: #133fa6;}
+.drop_signin a{color: #fff !important;}

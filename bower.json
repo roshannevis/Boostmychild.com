@@ -1,0 +1,21 @@
+{
+  "name": "boostmychild.com",
+  "description": "",
+  "main": "",
+  "authors": [
+    "roshannevis <roshan.mali@nevisnetworks.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/roshannevis/Boostmychild.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

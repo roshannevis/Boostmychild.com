@@ -1,20 +1,62 @@
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <ul class="navbar-nav mr-auto">
-        <li>
-            <div class="row">
-                <div class="col-xs-12">
-                    <img [src]="logoImg">
-                </div>
+
+ <header>
+       <div class="navigation-outer mob_header" >
+        <nav class="navigation-bar hidden-print" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" ng-click="isCollapsed = !isCollapsed">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="header_logo" ui-sref="home" ng-click="isCollapsed = false"><img src="./../../assets/images/newlogo1.png" class="logo"></a>
+              </div>
+
+              <div id="navbar" class="navbar-collapse collapse" uib-collapse="!isCollapsed">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li ng-show="userdatalength <=0 && $state.current.name != 'serviceproviderzone'">
+                      <a ui-sref="assessment" ng-click="isCollapsed = false">Assessments</a>
+                    </li>
+
+                    <li ng-show="userdatalength <=0 && $state.current.name == 'serviceproviderzone'" class="blue_button drop_signin">
+                       <a href="#" ng-click="isCollapsed = false;opensignupModal('serviceprovider', 2)" >Sign in</a>
+                    </li>
+
+
+                   <!--  <li ng-show="userdatalength <=0 && $state.current.name != 'serviceproviderzone'" class="blue_button drop_signin">
+                       <a href="#"  ng-click="isCollapsed = false;opensignupModal('consumer', 2)" >Sign in</a>
+                    </li> -->
+                    <!-- <li data-ng-show="!userDetails.user_id"><a ui-sref="whyboostmychild">Why boostmychild?</a></li> -->
+                    <!-- <li ng-show="userdatalength <=0 && $state.current.name != 'serviceproviderzone'" class="drop_sp">
+                      <a ui-sref="serviceproviderzone" ng-click="isCollapsed = false" >Service Providers</a>
+                    </li> -->
+
+
+                  <li data-ng-show="!userDetails.user_id" ><a href="tel:+91 7888100034"> <span style="margin:0px;" class="glyphicon glyphicon-phone" aria-hidden="true"></span> +91 7888100034 /
+                 35 /  36</a></li>
+<!-- 
+                 <li data-ng-show="userDetails.user_id" style="margin-top:5px;" class="blue_button drop_signin"> <a ui-sref="consumerwall.assessments">My Wall</a></li>
+
+                  <li data-ng-show="userDetails.user_id" class="dropdown" uib-dropdown on-toggle="toggled(open)">
+          <a href id="userprofile-dropdown" class="profile_name" uib-dropdown-toggle>
+            Hello <span ng-bind-html="userDetails.user_first_name">{{userDetails.user_last_name}} ! </span><span class="caret"></span>
+          </a>
+          <ul uib-dropdown-menu role="menu" aria-labelledby="userprofile-dropdown">
+            <li ng-show="userDetails.user_type==2" > <a ui-sref="spinbox.wall">My Wall</a></li>
+            <li ng-show="userDetails.user_type==2" > <a ui-sref="events">My Events</a></li>
+            <li ng-show="userDetails.user_type==2" > <a ui-sref="profile">My Profile</a></li>
+            <li ng-show="userDetails.user_type==3" > <a ui-sref="myprofile">My Profile</a></li>
+            <li ng-show="userDetails.user_type==3" > <a ui-sref="mychilds">Child Details</a></li>
+            <li ng-hide="userDetails.s_login==1" > <a href="#" ng-click="openChangePasswordModal()">Change Password</a></li>
+            <li> <a ui-sref="transactions">Transactions</a></li>
+            <li > <a href="#" ng-click="logoutUser()">Log off</a></li>
+          </ul>
+        </li> -->
+              </ul>
+              </div>
             </div>
-        </li>
-        <li class="nav-item" style="margin-left: 500px">
-            <a class="nav-link" href="#">Assessments</a>
-        </li>
-        <li>
-            <button type="button" class="btn btn-primary">Sign in</button>
-        </li>
-        <li>
-            <a href="tel:+91 7888100034"> <span style="margin-left:10px;margin-top: 10px;font-size: 14px" class="glyphicon glyphicon-phone"></span> +91 7888100034 / 35 / 36</a>
-        </li>
-    </ul>
-</nav>
+             <!-- <div ng-class="{backdrop: isCollapsed === true}" ng-click="isCollapsed = !isCollapsed"></div> -->
+          </nav>
+        </div>
+      </header>

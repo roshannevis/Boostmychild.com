@@ -1,0 +1,123 @@
+<svg viewBox="0 0 1056 745" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    Pencil
+  </title>
+	
+  <defs>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
+      <stop stop-color="#000" offset="0%"/>
+      <stop stop-color="#000" offset="100%"/>
+    </linearGradient>
+  </defs>
+	
+	<symbol id="details"> 
+		<g fill="#3369e8">
+      <path d="M958.586 146.56L888.79 21.116C885.656 15.48 879.862 12 873.594 12c-6.25 0-12.05 3.474-15.18 9.1L791 142.27l24.67 16.338h115.87l27.046-12.043v-.006zM798 379.27l5.485 275.377c0 46.595 33.052 84.353 73.814 84.353 40.78 0 73.843-37.764 73.843-84.36l-5.478-275.4c0-46.573-33.046-84.338-73.82-84.344-40.78 0-73.82 37.778-73.827 84.352l-.018.02zM1056 693c-39.7-1.213-71.515-33.724-71.515-73.668L979 378.722l.018-.02c.006-40.694 33.046-73.702 73.826-73.702 1.057 0 2.11.022 3.156.067V693zM702 693c39.7-1.213 71.515-33.724 71.515-73.668L779 378.722l-.018-.02C778.976 338.01 745.936 305 705.156 305c-1.057 0-2.11.022-3.156.067V693z"/>
+    </g>
+	</symbol>
+	
+	<symbol id="outline"> 
+		<g fill="none" fill-rule="evenodd">
+			<path d="M357 356.492v326.07c0 27.615-77.23 50-172.5 50S12 710.178 12 682.563V305.557c0-1.182.294-2.296.814-3.272-.08-.288-.017-.643.208-1.028L179.336 16.65c3.62-6.2 9.494-6.2 13.116 0L357 298.234v58.257z" stroke="#d50525" stroke-width="23"/>  
+		</g>
+	</symbol>
+			
+	<symbol id="background">
+		<path d="M345 655c0 27.614-77.23 50-172.5 50S0 682.614 0 655V271h345v384z" fill="url(#a)" transform="translate(357 34)"/>
+    <path d="M702 304.99c0 14.917-77.23 27.01-172.5 27.01S357 319.907 357 304.99h345zM511.05 46.807c10.19-17.077 26.712-17.075 36.9 0L702 304.99H357L511.05 46.807z" fill="#eeb211"/>
+	</symbol>
+	
+	<use href="#background">
+		<animate attributeName="x"
+							 id="directBackStart"
+							 attributeType="XML"
+							 from="0" to="172"
+							 begin="0"
+							 dur="1s"
+							 fill="freeze"
+							 repeatCount='1'
+							 values="0;172"
+							 calcMode="spline"
+             	 keySplines="0.5 0 0.5 1"/>			 
+			/>
+		<animate attributeName="x"
+							 id="directBack1"
+							 attributeType="XML"
+							 from="172" to="-172"
+							 begin="directBackStart.end;directBack2.end"
+							 dur="2s"
+							 fill="freeze"
+							 repeatCount="1"
+							 values="172;-172"
+							 calcMode="spline"
+             	 keySplines="0.5 0 0.5 1"/>			 
+			/>
+		<animate attributeName="x"
+							 id="directBack2"
+							 attributeType="XML"
+							 from="-172" to="172"
+							 begin="directBack1.end"
+							 dur="2s"
+							 fill="freeze"
+							 repeatCount="1"
+							 values="-172;172"
+							 calcMode="spline"
+             	 keySplines="0.5 0 0.5 1"/>			 
+			/>
+			
+	</use>
+			
+	<use href="#outline">
+			<animate attributeName="x"
+							 id="direct1"
+							 attributeType="XML"
+							 from="172" to="517"
+							 begin="0;direct2.end"
+							 dur="1s"
+							 fill="freeze"
+							 repeatCount="1"
+							 values="172;517"
+							 calcMode="spline"
+             	 keySplines="0.5 0 0.5 1"/>			 
+			/>
+		<animate attributeName="x"
+							 id="direct2"
+							 attributeType="XML"
+							 from="517" to="172"
+							 begin="direct1.end"
+							 dur="1s"
+							 fill="freeze"
+							 repeatCount="1"
+							 values="517;172"
+							 calcMode="spline"
+             	 keySplines="0.5 0 0.5 1"/>			 
+			/>
+	</use>
+			
+	<use href="#details">
+		<animate attributeName="x"
+							 id="direct1"
+							 attributeType="XML"
+							 from="-172" to="-517"
+							 begin="0;direct2.end"
+							 dur="1s"
+							 fill="freeze"
+							 repeatCount="1"
+							 values="-172;-517"
+							 calcMode="spline"
+             	 keySplines="0.5 0 0.5 1"/>			 
+			/>
+		<animate attributeName="x"
+							 id="direct2"
+							 attributeType="XML"
+							 from="-517" to="-172"
+							 begin="direct1.end"
+							 dur="1s"
+							 fill="freeze"
+							 repeatCount="1"
+							 values="-517;-172"
+							 calcMode="spline"
+             	 keySplines="0.5 0 0.5 1"/>			 
+			/>
+	</use>
+</svg>
